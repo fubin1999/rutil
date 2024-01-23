@@ -1,0 +1,26 @@
+[project]
+name = "rutil"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "fubin1999", email = "65430559+fubin1999@users.noreply.github.com" }
+]
+dependencies = [
+    "click>=8.1.7",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest>=7.4.4",
+    "pytest-mock>=3.12.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
